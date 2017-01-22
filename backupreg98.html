@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>Conference 98: Attendee Registration From</title></head>
+  
+<body bgcolor=#FFFFFF text=#101010 alink=#F00000 link=#2020F0 vlink=#101080>
+
+<!-- to center the internal table -->
+<table width="100%"><tr><td align=center>
+
+<table border=0 width=600>
+<!-- format line - do not remove me -->
+    <tr>
+	<td width=100><img src="images/50x1.gif" alt=" "></td>
+        <td colspan=2 width=500>&nbsp;</td>
+    </tr> 
+
+<!-- banner -->
+    <tr>
+	<td width colspan=3>
+        <center>
+        <img src="/images/acmlogos/wendyacm-3.gif"><br>
+        <h1>
+	 1998 Midwestern ACM Chapter Conference<br> 
+	 Attendee Registration Form
+	</h1>
+        2-4 October, 1998<br>
+        </center>
+	</td>
+    </tr>
+
+<!-- item -->
+    <tr>
+	<td colspan=3><br>
+	 <hr>
+         <b>Attendee Registration</b>
+	</td>
+    </tr>
+    <tr>
+	<td></td>
+	<td colspan=2>
+	Registration fees for the 1998 conference will be $15.  This includes all events, 
+	meals, and a Conference '98 T-Shirt.  
+	</td>
+    </tr>
+
+<!-- Form CGI -->
+<form method=POST action="/acm-cgi-bin/conference/attreg98.cgi">
+
+<!-- item -->
+    <tr>
+	<td colspan=3><br>
+	 <hr>
+	</td>
+    </tr>
+    <tr>
+	<td></td>
+	<td colspan=2>
+	 <p>
+	 <center>
+	 <b>Required fields are marked with '*'.</b>
+	 </center>
+	</td>
+    </tr>
+
+<!-- item -->
+    <tr><td colspan=3><br><hr><b>Personal Information</b></td></tr>
+    <tr>
+	<td rowspan=5></td>
+	<td align="left">
+	 <b>First Name*:</b>
+	</td>
+	<td>
+	 <input type="text" size=23 name="first_name" maxlength=128>
+	 <b>Last Name*: </b>
+	 <input type="text" size=23 name="last_name" maxlength=128>
+	</td>
+    </tr>
+    <tr>
+        <td align="left">
+	 <b>Street Address*: </b>
+	</td>
+	<td>
+	 <input type="text" size=60 name="street" maxlength=128>
+	</td>
+    </tr>
+    <tr>
+	<td align="left">
+	 <b>City/Town*: </b>
+	</td>
+	<td>
+	 <input type="text" size=27 name="city" maxlength=40>
+	 <b>State*:</b>
+	 <input type="text" size=2 name="state" maxlength=2>
+	 <b>ZIP Code:</b>
+	 <input type="text" size=10 name="zip" maxlength=10>
+	</td>
+    </tr>
+    <tr>
+	<td align="left">
+	<b>Email Address*:</b>
+	</td>
+	<td>
+	 <input type="text" size=40 name="email" maxlength=128>
+	</td>
+    </tr>
+    <tr>
+	<td colspan=2 align=center>
+	 <p><input type="checkbox" name="stay_with_student">
+	 <b>Check here if you would like assistance finding housing.</b>
+	 <br>
+    	</td>
+    </tr>
+
+<!-- item -->
+    <tr>
+	<td colspan=3><br>
+	 <hr><b>Organizational Affiliation</b>
+	</td>
+    </tr>
+    <tr>
+	<td rowspan=4></td>
+	<td>
+	 <b>Organization/ School/Company:</b>
+        </td>
+        <td>
+	 <input type="text" size=60 name ="org" value="" maxlength=128>
+	</td>
+    </tr>
+    <tr>
+	<td>
+	 <b>Street Address:</b>
+        </td>
+        <td>
+	 <input type="text" size=60 name="org_street" maxlength=128>
+	</td>
+    </tr>
+    <tr>
+	<td align="left">
+	 <b>City/Town*: </b>
+	</td>
+	<td>
+	 <input type="text" size=27 name="org_city" maxlength=40>
+	 <b>State*:</b>
+	 <input type="text" size=2 name="org_state" maxlength=2>
+	 <b>ZIP Code:</b>
+	 <input type="text" size=10 name="org_zip" maxlength=10>
+	</td>
+    </tr>
+    <tr>
+	<td colspan=2 align=center>
+         <table>
+ 	  <tr><td colspan=2><b>Please check the type of above organization:</b></td></tr>
+	  <tr>
+	   <td><input type="radio" name="org_type" value="org_acm_student">ACM Student Chapter</td>
+	   <td><input type="radio" name="org_type" value="org_comp">Corporation/Employer</td>
+	  <tr>
+	  </tr>
+	   <td><input type="radio" name="org_type" value="org_acm_pro">ACM Professional Chapter</td>
+	   <td><input type="radio" name="org_type" value="org_other">Other Organization</td>
+	  <tr>
+	  </tr>
+	   <td><input type="radio" name="org_type" value="org_uni">University</td>
+	   <td><input type="radio" name="org_type" value="org_none">None</td>
+	  </tr>
+	 </table>
+	</td>
+    </tr>
+
+
+<!-- item -->
+    <tr><td colspan=3><br><hr><b>Payment Information</b></td></tr>
+    <tr><td></td><td colspan=2>
+	Attendance to the 1998 Midwestern ACM Chapter Conference costs $15.  By filling
+	out this form and submitting it, you agree to pay $15 to ACM@UIUC for entrance
+	to all conference events including the Employment Fair on October 2, 1998.
+	Failure to pay for your registration will result in deletion of your 
+	reservation for Conference '98.  Please click the item below to agree to
+	these conditions.<BR>
+	<p>
+	<center><input type="checkbox" name="agree_fee"><b>Ok, I agree to pay $15</b><br>
+	</center>
+    </td></tr>
+
+<!-- item -->
+    <tr><td colspan=3><br><hr><b>Resume</b></td></tr>
+    <tr><td></td><td colspan=2>
+	Be sure to send a resume to be included in the conference resume book.  Resumes
+	should be one page long, printed on white paper, and fully represent you to
+	prospective employers.  Resumes should <b>not</b> be university recruiting
+	data sheets (EPO data sheets for example).  Send resumes to ACM@UIUC at the
+	address below.  Companies will be presented with a resume book near the close
+	of the job fair.
+    </td></tr>
+
+<!-- item -->
+    <tr><td colspan=3>
+	<br>
+	<hr>
+	<p>
+	Payment can be completed at the time of registration, or mailed ahead of time 
+	to <i>ACM@UIUC Conference</i>:
+	<center>
+	Association For Computing Machinery<br>
+	Attn. Conference Committee<br>
+	1225 Digital Computer Laboratory<br>
+	1304 West Springfield<br>
+	Urbana, IL  61801<br>
+	</center>
+
+	<p>
+	Conference events are scheduled from October 2, 1998 through October 4, 1998.
+	The Employment Fair / Product Show is currently scheduled for October 2, 1998.
+	You will be mailed an official schedule prior to the conference.
+	
+	<p>
+	Questions? Mail <a href="mailto:conference@acm.uiuc.edu">us</a>!
+
+	<p>
+        <center>
+	<input type="submit" value="OK, submit my application">
+	<input type="reset" value="No, reset this form">
+	</center>
+    </td></tr>
+
+<!-- item -->
+    <tr><td colspan=3>
+	<hr>
+    </td></tr>
+
+</table>
+</form>
+</td></tr>
+</table>
+<!-- end form table -->
+
+<center>
+<a href="/">Association for Computing Machinery</a>, University of Illinois at
+Urbana-Champaign<br>
+<i>Last updated: 6/28/98 <a href="mailto:kumbhani@uiuc.edu">kumbhani@uiuc.edu</a></i> 
+</center>
+</BODY> </HTML>
